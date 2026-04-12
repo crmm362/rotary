@@ -8,7 +8,7 @@ import * as $events from "./routes/events.tsx";
 import * as $gallery from "./routes/gallery.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $members from "./routes/members.tsx";
-
+import * as $MobileDrawer from "./islands/MobileDrawer.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -20,7 +20,9 @@ const manifest = {
     "./routes/index.tsx": $index,
     "./routes/members.tsx": $members,
   },
-  islands: {},
+  islands: {
+    "./islands/MobileDrawer.tsx": $MobileDrawer,
+  },
   baseUrl: import.meta.url,
 } satisfies Manifest;
 

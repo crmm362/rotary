@@ -1,34 +1,10 @@
+import MobileDrawer from "../islands/MobileDrawer.tsx";
+
 export default function Navbar() {
   return (
     <div class="navbar bg-white/95 backdrop-blur-sm shadow-sm sticky top-0 z-50 border-b border-base-200">
       <div class="navbar-start">
-        <div class="dropdown">
-          <div tabIndex={0} role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg border border-base-200"
-          >
-            <li><a href="/members" class="font-medium">Members</a></li>
-            <li><a href="/events" class="font-medium">Events</a></li>
-            <li><a href="/gallery" class="font-medium">Gallery</a></li>
-            <li><a href="/contact" class="font-medium">Contact</a></li>
-          </ul>
-        </div>
+        <MobileDrawer />
         <a href="/" class="flex items-center gap-3 ml-1">
           <svg
             width="36"
