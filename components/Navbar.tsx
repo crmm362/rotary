@@ -23,10 +23,10 @@ export default function Navbar() {
             tabIndex={0}
             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow-lg border border-base-200"
           >
-            <li><a href="#about" class="font-medium">About</a></li>
-            <li><a href="#projects" class="font-medium">Projects</a></li>
-            <li><a href="#events" class="font-medium">Events</a></li>
-            <li><a href="#contact" class="font-medium">Contact</a></li>
+            <li><a href="/members" class="font-medium">Members</a></li>
+            <li><a href="/events" class="font-medium">Events</a></li>
+            <li><a href="/gallery" class="font-medium">Gallery</a></li>
+            <li><a href="/contact" class="font-medium">Contact</a></li>
           </ul>
         </div>
         <a href="/" class="flex items-center gap-3 ml-1">
@@ -75,23 +75,15 @@ export default function Navbar() {
         <ul class="menu menu-horizontal px-1 gap-1">
           <li>
             <a
-              href="#about"
+              href="/members"
               class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
             >
-              About
+              Members
             </a>
           </li>
           <li>
             <a
-              href="#projects"
-              class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
-            >
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              href="#events"
+              href="/events"
               class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
             >
               Events
@@ -99,7 +91,15 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="#contact"
+              href="/gallery"
+              class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
+            >
+              Gallery
+            </a>
+          </li>
+          <li>
+            <a
+              href="/contact"
               class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
             >
               Contact
@@ -108,7 +108,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div class="navbar-end">
-        <a href="#contact" class="btn btn-primary btn-sm rounded-full px-5 font-semibold">
+        <a href="/contact" class="btn btn-primary btn-sm rounded-full px-5 font-semibold">
           Join Us
         </a>
       </div>

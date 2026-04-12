@@ -146,7 +146,7 @@ export default function Home(_props: PageProps) {
                 </svg>
               </div>
               <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">Members</div>
-              <div class="stat-value text-secondary text-4xl font-black">80+</div>
+              <div class="stat-value text-secondary text-4xl font-black">40+</div>
               <div class="stat-desc text-gray-500">Active Rotarians</div>
             </div>
             <div class="stat py-8 text-center">
@@ -278,6 +278,115 @@ export default function Home(_props: PageProps) {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── UPCOMING EVENTS PREVIEW ── */}
+      <section class="py-20 bg-base-200">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <div class="badge badge-primary badge-outline font-semibold tracking-widest uppercase text-xs px-4 py-3 mb-3">
+                What's On
+              </div>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-base-content">
+                Upcoming <span class="text-primary">Events</span>
+              </h2>
+            </div>
+            <a href="/events" class="btn btn-outline btn-primary btn-sm rounded-full px-6 flex-shrink-0">
+              View All Events →
+            </a>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {/* Featured: Musical Evening */}
+            <div class="card bg-gradient-to-br from-secondary/10 to-base-100 border border-secondary/30 shadow-md card-hover md:col-span-2">
+              <div class="card-body p-7">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="text-3xl w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/20">🎵</div>
+                  <div>
+                    <span class="badge badge-secondary text-xs font-bold">✨ Featured</span>
+                    <p class="text-xs text-gray-400 mt-0.5">Cultural Event</p>
+                  </div>
+                </div>
+                <h3 class="text-xl font-extrabold text-base-content mb-1">Musical Evening</h3>
+                <p class="text-sm text-gray-400 mb-3">📅 May 2026 — Date TBD &nbsp;·&nbsp; 📍 Venue TBD</p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  An enchanting evening of classical and contemporary music, raising funds for our community health initiatives. Details being finalised.
+                </p>
+                <div class="mt-4">
+                  <span class="badge badge-secondary badge-outline text-xs">Stay tuned for updates</span>
+                </div>
+              </div>
+            </div>
+            {/* Club Assembly */}
+            <div class="card bg-base-100 border border-base-200 shadow-sm card-hover">
+              <div class="card-body p-7">
+                <div class="text-3xl mb-3">🏛️</div>
+                <span class="badge badge-primary badge-outline text-xs font-semibold mb-2">Club Meeting</span>
+                <h3 class="text-lg font-bold text-base-content mb-1">Club Assembly</h3>
+                <p class="text-sm text-gray-400 mb-2">📅 April 26, 2026</p>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Quarterly assembly to review projects and plan the upcoming quarter.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LATEST BULLETIN ── */}
+      <section class="py-20 bg-base-100">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+            <div>
+              <div class="badge badge-secondary badge-outline font-semibold tracking-widest uppercase text-xs px-4 py-3 mb-3">
+                Club News
+              </div>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-base-content">
+                Latest <span class="text-primary">Bulletin</span>
+              </h2>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {[
+              {
+                date: "April 12, 2026",
+                tag: "Club Activity",
+                title: "Club Assembly — April 2026",
+                excerpt: "The April club assembly reviewed the progress of all ongoing service projects and approved budgets for the upcoming medical camp.",
+                icon: "📋",
+                tagClass: "badge-primary",
+              },
+              {
+                date: "March 8, 2026",
+                tag: "Youth Service",
+                title: "Interact Club Inaugurated at MES HSS",
+                excerpt: "A new Interact Club was successfully launched at MES Higher Secondary School, extending Rotary's values of service to young students.",
+                icon: "🎓",
+                tagClass: "badge-success",
+              },
+              {
+                date: "January 18, 2026",
+                tag: "Service Project",
+                title: "Blood Donation Camp — 60+ Units Collected",
+                excerpt: "Our annual blood donation camp in collaboration with the district blood bank was a tremendous success with strong community participation.",
+                icon: "🩸",
+                tagClass: "badge-error",
+              },
+            ].map((item) => (
+              <div key={item.title} class="card bg-base-100 border border-base-200 shadow-sm card-hover">
+                <div class="card-body p-6">
+                  <div class="flex items-center gap-2 mb-3">
+                    <span class="text-2xl">{item.icon}</span>
+                    <span class={`badge ${item.tagClass} badge-outline text-xs font-semibold`}>{item.tag}</span>
+                  </div>
+                  <p class="text-xs text-gray-400 mb-2">{item.date}</p>
+                  <h3 class="font-bold text-base-content text-base leading-snug mb-2">{item.title}</h3>
+                  <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">{item.excerpt}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
