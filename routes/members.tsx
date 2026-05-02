@@ -6,41 +6,256 @@ type Member = {
   role: string;
   profession: string;
   initials: string;
+  photo: string;
   isPast?: boolean;
 };
 
 const boardMembers: Member[] = [
-  { name: "Dr. Suresh Kumar P.", role: "President", profession: "Physician", initials: "SK" },
-  { name: "Rtn. Anil Mathew", role: "Secretary", profession: "Businessman", initials: "AM" },
-  { name: "Rtn. Biju George", role: "Treasurer", profession: "Chartered Accountant", initials: "BG" },
-  { name: "Rtn. Rajesh Mohan", role: "Vice President", profession: "Engineer", initials: "RM" },
-  { name: "Rtn. Pradeep Nair", role: "Joint Secretary", profession: "Educator", initials: "PN" },
-  { name: "Rtn. Sridhar Menon", role: "Sergeant-at-Arms", profession: "Pharmacist", initials: "SM" },
+  {
+    name: "Rtn. PHF Kuriakose KK",
+    role: "President",
+    profession: "Business",
+    initials: "KK",
+    photo: "/members/kuriakose.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Anand Sriram",
+    role: "Secretary",
+    profession: "Doctor",
+    initials: "AS",
+    photo: "/members/anand-s.jpeg",
+  },
+  {
+    name: "Rtn. Damodar Avanoor",
+    role: "Treasurer",
+    profession: "Business",
+    initials: "DA",
+    photo: "/members/damodar-avanoor.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Kasim Kolakkadan",
+    role: "Immediate Past President",
+    profession: "Doctor",
+    initials: "KK",
+    photo: "/members/kasim-kolakkadan.jpg",
+    isPast: true,
+  },
+  {
+    name: "Rtn. Asgar S.A.",
+    role: "President Elect",
+    profession: "Business",
+    initials: "AS",
+    photo: "/members/asgar-sa.jpeg",
+  },
+  {
+    name: "Rtn. MPHF Sharath Namboothiri",
+    role: "Rotary Foundation Chair",
+    profession: "Business",
+    initials: "SN",
+    photo: "/members/sarat-n.jpeg",
+  },
 ];
 
 const directors: Member[] = [
-  { name: "Rtn. Krishnamoorthy R.", role: "Director – Service Projects", profession: "Businessman", initials: "KR" },
-  { name: "Rtn. Vijayan P.", role: "Director – Club Service", profession: "Govt. Officer", initials: "VP" },
-  { name: "Rtn. Shajahan K.", role: "Director – Community Service", profession: "Contractor", initials: "SJ" },
-  { name: "Rtn. Anwar Sadath", role: "Director – Vocational Service", profession: "Doctor", initials: "AS" },
-  { name: "Rtn. Ramesan N.", role: "Director – Youth Service", profession: "Teacher", initials: "RN" },
+  {
+    name: "MPHF Rtn. Narendradev",
+    role: "Club Administration Chair",
+    profession: "Rotarian",
+    initials: "ND",
+    photo: "/members/narendradev.jpg",
+  },
+  {
+    name: "Rtn. MPHF Adv. Rasheed Oothakkadan",
+    role: "Membership Chair",
+    profession: "Advocate",
+    initials: "RO",
+    photo: "/members/rasheed-o.jpeg",
+  },
+  {
+    name: "Rtn. MPHF Dr. Jayachandran",
+    role: "Public Image Chair",
+    profession: "Doctor",
+    initials: "JA",
+    photo: "/members/jayachandran-ak.jpeg",
+  },
+  {
+    name: "Rtn. Liyakath Ali Khan",
+    role: "Service Project Chair",
+    profession: "Business",
+    initials: "LA",
+    photo: "/members/liaqat-ali-khan.jpeg",
+  },
+  {
+    name: "Rtn. Salim",
+    role: "Sergeant at Arms",
+    profession: "Rotarian",
+    initials: "S",
+    photo: "/members/salim.jpg",
+  },
+  {
+    name: "Rtn. Suresh Kollathodi",
+    role: "Club Learning Facilitator, Club Program & Events Coordinator",
+    profession: "Rotarian",
+    initials: "SK",
+    photo: "/members/suresh-kollathodi.jpg",
+  },
+  {
+    name: "Rtn. Prasad V.",
+    role: "Executive Secretary",
+    profession: "Rotarian",
+    initials: "PV",
+    photo: "/members/prasad-v.jpeg",
+  },
 ];
 
 const generalMembers: Member[] = [
-  { name: "IPP Rtn. Sathish Babu", role: "Immediate Past President", profession: "Businessman", initials: "SB", isPast: true },
-  { name: "Rtn. Sivadas K.", role: "Member", profession: "Architect", initials: "SV" },
-  { name: "Rtn. Muraleedharan K.", role: "Member", profession: "Businessman", initials: "MK" },
-  { name: "Rtn. Joseph Mathew", role: "Member", profession: "Retired Bank Officer", initials: "JM" },
-  { name: "Rtn. Hamza P.", role: "Member", profession: "Businessman", initials: "HP" },
-  { name: "Rtn. Chandran V.", role: "Member", profession: "Advocate", initials: "CV" },
-  { name: "Rtn. Gopinath R.", role: "Member", profession: "Educator", initials: "GR" },
-  { name: "Rtn. Rajeev Kumar", role: "Member", profession: "Engineer", initials: "RK" },
-  { name: "Rtn. Arun Prasad", role: "Member", profession: "Businessman", initials: "AP" },
-  { name: "Rtn. Sunil Thomas", role: "Member", profession: "Pharmacist", initials: "ST" },
-  { name: "Rtn. Narayanan M.", role: "Member", profession: "Retailer", initials: "NM" },
-  { name: "Rtn. Faisal K.P.", role: "Member", profession: "Businessman", initials: "FK" },
-  { name: "Rtn. Dinesh Babu", role: "Member", profession: "Civil Engineer", initials: "DB" },
-  { name: "Rtn. Ramachandran T.", role: "Member", profession: "Advocate", initials: "RT" },
+  {
+    name: "Rtn. Dr. Jayachandran A.K.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "JA",
+    photo: "/members/jayachandran-ak.jpeg",
+  },
+  {
+    name: "Rtn. Ayoob K.P.",
+    role: "Member",
+    profession: "Business",
+    initials: "AK",
+    photo: "/members/ayoob-kp.jpeg",
+  },
+  {
+    name: "Rtn. Adv. Hassan A.V.",
+    role: "Member",
+    profession: "Advocate",
+    initials: "HA",
+    photo: "/members/hassan-av.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Vijay P.G.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "VP",
+    photo: "/members/vijay-pg.jpeg",
+  },
+  {
+    name: "Rtn. Liaqat Ali Khan",
+    role: "Member",
+    profession: "Business",
+    initials: "LA",
+    photo: "/members/liaqat-ali-khan.jpeg",
+  },
+  {
+    name: "Rtn. Kuriakose",
+    role: "Member",
+    profession: "Business",
+    initials: "K",
+    photo: "/members/kuriakose.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Praveen R.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "PR",
+    photo: "/members/praveen-r.jpeg",
+  },
+  {
+    name: "Rtn. Asgar S.A.",
+    role: "Member",
+    profession: "Business",
+    initials: "AS",
+    photo: "/members/asgar-sa.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Rajesh P.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "RP",
+    photo: "/members/rajesh-p.jpeg",
+  },
+  {
+    name: "Rtn. Sarat Nambuiri",
+    role: "Member",
+    profession: "Business",
+    initials: "SN",
+    photo: "/members/sarat-n.jpeg",
+  },
+  {
+    name: "Rtn. Abdul Azeez",
+    role: "Member",
+    profession: "Rotarian",
+    initials: "AA",
+    photo: "/members/abdul-azeez.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Anand S.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "AS",
+    photo: "/members/anand-s.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Shamsudheen M.",
+    role: "Member",
+    profession: "Doctor",
+    initials: "SM",
+    photo: "/members/shamsudheen-m.jpeg",
+  },
+  {
+    name: "Rtn. Adv. Rasheed Oothakkadan",
+    role: "Member",
+    profession: "Advocate",
+    initials: "RO",
+    photo: "/members/rasheed-o.jpeg",
+  },
+  {
+    name: "Rtn. Prasad V.",
+    role: "Member",
+    profession: "Rotarian",
+    initials: "PV",
+    photo: "/members/prasad-v.jpeg",
+  },
+  {
+    name: "Rtn. Damodar Avanoor",
+    role: "Member",
+    profession: "Business",
+    initials: "DA",
+    photo: "/members/damodar-avanoor.jpeg",
+  },
+  {
+    name: "Rtn. Adv. Jiji Josesh",
+    role: "Member",
+    profession: "Advocate",
+    initials: "JJ",
+    photo: "/members/jiji-josesh.jpeg",
+  },
+  {
+    name: "Rtn. Dr. Kasim Kolakkadan",
+    role: "Member",
+    profession: "Doctor",
+    initials: "KK",
+    photo: "/members/kasim-kolakkadan.jpg",
+  },
+  {
+    name: "Rtn. Narendradev",
+    role: "Member",
+    profession: "Rotarian",
+    initials: "ND",
+    photo: "/members/narendradev.jpg",
+  },
+  {
+    name: "Rtn. Suresh Kollathodi",
+    role: "Member",
+    profession: "Rotarian",
+    initials: "SK",
+    photo: "/members/suresh-kollathodi.jpg",
+  },
+  {
+    name: "Rtn. Salim",
+    role: "Member",
+    profession: "Rotarian",
+    initials: "S",
+    photo: "/members/salim.jpg",
+  },
 ];
 
 const avatarColors = [
@@ -50,27 +265,61 @@ const avatarColors = [
   "bg-rotary-blue-light text-white",
 ];
 
-function Avatar({ initials, size = "lg", colorClass }: { initials: string; size?: "sm" | "lg" | "xl"; colorClass: string }) {
-  const sizeClass = size === "xl" ? "w-20 h-20 text-2xl" : size === "lg" ? "w-14 h-14 text-lg" : "w-10 h-10 text-sm";
-  return (
-    <div class={`${sizeClass} ${colorClass} rounded-full flex items-center justify-center font-bold flex-shrink-0`}>
+function Avatar(
+  { initials, photo, name, size = "lg", colorClass }: {
+    initials: string;
+    photo: string;
+    name: string;
+    size?: "sm" | "lg" | "xl";
+    colorClass: string;
+  },
+) {
+  const sizeClass = size === "xl"
+    ? "w-20 h-20 text-2xl"
+    : size === "lg"
+    ? "w-14 h-14 text-lg"
+    : "w-10 h-10 text-sm";
+  const fallbackAvatar = (
+    <div
+      class={`${sizeClass} ${colorClass} rounded-full flex items-center justify-center font-bold flex-shrink-0`}
+    >
       {initials}
     </div>
+  );
+
+  return (
+    <object
+      data={photo}
+      aria-label={`${name} photo`}
+      class={`${sizeClass} rounded-full object-cover border-2 border-white shadow-sm bg-base-200 flex-shrink-0 overflow-hidden`}
+    >
+      {fallbackAvatar}
+    </object>
   );
 }
 
 function BoardCard({ member, index }: { member: Member; index: number }) {
-  const colorClass = index % 2 === 0 ? "bg-primary text-primary-content" : "bg-secondary text-secondary-content";
+  const colorClass = index % 2 === 0
+    ? "bg-primary text-primary-content"
+    : "bg-secondary text-secondary-content";
   return (
-    <div class="card bg-base-100 shadow-md border border-base-200 card-hover text-center p-6">
+    <div class="card bg-base-100 shadow-md border border-base-200 card-hover text-center p-5 h-full">
       <div class="flex justify-center mb-4">
-        <Avatar initials={member.initials} size="xl" colorClass={colorClass} />
+        <Avatar
+          initials={member.initials}
+          photo={member.photo}
+          name={member.name}
+          size="xl"
+          colorClass={colorClass}
+        />
       </div>
-      <h3 class="font-bold text-base-content text-lg leading-tight">{member.name}</h3>
-      <div class="badge badge-primary badge-outline mt-2 mb-1 text-xs font-semibold px-3 py-2">
+      <h3 class="font-bold text-base-content text-lg leading-tight">
+        {member.name}
+      </h3>
+      <div class="mt-3 mb-2 inline-flex max-w-full min-h-8 items-center justify-center rounded-full border border-primary/30 px-3 py-1.5 text-xs font-semibold leading-snug text-primary whitespace-normal break-words">
         {member.role}
       </div>
-      <p class="text-gray-400 text-sm mt-1">{member.profession}</p>
+      <p class="text-gray-400 text-sm leading-tight">{member.profession}</p>
     </div>
   );
 }
@@ -79,7 +328,13 @@ function MemberRow({ member, index }: { member: Member; index: number }) {
   const colorClass = avatarColors[index % avatarColors.length];
   return (
     <div class="flex items-center gap-4 p-4 bg-base-100 rounded-xl border border-base-200 hover:border-primary/30 hover:shadow-sm transition-all">
-      <Avatar initials={member.initials} size="lg" colorClass={colorClass} />
+      <Avatar
+        initials={member.initials}
+        photo={member.photo}
+        name={member.name}
+        size="lg"
+        colorClass={colorClass}
+      />
       <div class="flex-1 min-w-0">
         <p class="font-semibold text-base-content truncate">{member.name}</p>
         <p class="text-sm text-gray-500 truncate">{member.role}</p>
@@ -100,13 +355,14 @@ export default function MembersPage() {
       <section class="hero-gradient py-16">
         <div class="max-w-4xl mx-auto px-6 text-center">
           <div class="badge badge-secondary badge-lg font-semibold tracking-widest uppercase text-xs px-4 py-3 mb-5">
-            Club Roster 2025–26
+            Club Roster 2026-2027
           </div>
           <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4">
             Our Members
           </h1>
           <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            Meet the dedicated Rotarians of Perinthalmanna — professionals committed to service, fellowship, and lasting community impact.
+            Meet the dedicated Rotarians of Perinthalmanna — professionals
+            committed to service, fellowship, and lasting community impact.
           </p>
         </div>
       </section>
@@ -119,11 +375,13 @@ export default function MembersPage() {
               Board of Directors
             </div>
             <h2 class="text-3xl font-extrabold text-base-content">
-              Club Leadership <span class="text-primary">2025–26</span>
+              Club Leadership <span class="text-primary">2026-2027</span>
             </h2>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {boardMembers.map((m, i) => <BoardCard key={m.name} member={m} index={i} />)}
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6 gap-4">
+            {boardMembers.map((m, i) => (
+              <BoardCard key={m.name} member={m} index={i} />
+            ))}
           </div>
         </div>
       </section>
@@ -136,11 +394,13 @@ export default function MembersPage() {
               Committees
             </div>
             <h2 class="text-2xl font-extrabold text-base-content">
-              Directors
+              Chairs & District Roles
             </h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {directors.map((m, i) => <MemberRow key={m.name} member={m} index={i} />)}
+            {directors.map((m, i) => (
+              <MemberRow key={m.name} member={m} index={i} />
+            ))}
           </div>
         </div>
       </section>
@@ -155,16 +415,15 @@ export default function MembersPage() {
             <h2 class="text-2xl font-extrabold text-base-content">
               All Members
               <span class="ml-3 badge badge-neutral text-sm font-normal align-middle">
-                {generalMembers.length + boardMembers.length + directors.length} total
+                {generalMembers.length} total
               </span>
             </h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {generalMembers.map((m, i) => <MemberRow key={m.name} member={m} index={i + directors.length} />)}
+            {generalMembers.map((m, i) => (
+              <MemberRow key={m.name} member={m} index={i + directors.length} />
+            ))}
           </div>
-          <p class="text-center text-gray-400 text-sm mt-6 italic">
-            * Placeholder data — update with actual member details
-          </p>
         </div>
       </section>
 
@@ -175,9 +434,13 @@ export default function MembersPage() {
             Want to Join Our Club?
           </h2>
           <p class="text-gray-500 mb-6">
-            We welcome professionals who share a passion for service. Rotary membership opens doors to a global community of change-makers.
+            We welcome professionals who share a passion for service. Rotary
+            membership opens doors to a global community of change-makers.
           </p>
-          <a href="/contact" class="btn btn-primary btn-lg rounded-full px-10 font-bold">
+          <a
+            href="/contact"
+            class="btn btn-primary btn-lg rounded-full px-10 font-bold"
+          >
             Apply for Membership
           </a>
         </div>
