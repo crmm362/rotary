@@ -41,7 +41,8 @@ export default function ContactPage({ data }: PageProps<FormState>) {
             Contact Us
           </h1>
           <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed">
-            Reach out for membership inquiries, project partnerships, or any questions about our club activities.
+            Reach out for membership inquiries, project partnerships, or any
+            questions about our club activities.
           </p>
         </div>
       </section>
@@ -50,7 +51,6 @@ export default function ContactPage({ data }: PageProps<FormState>) {
       <section class="py-16 bg-base-200">
         <div class="max-w-5xl mx-auto px-6">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
             {/* Info Column */}
             <div class="flex flex-col gap-6">
               <div>
@@ -61,14 +61,17 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   Rotary Club of Perinthalmanna
                 </h2>
                 <p class="text-gray-500 mt-2 leading-relaxed">
-                  Established 1967 · Rotary District 3201 · Rotary International
+                  Established 1967 · Rotary District 3201 · Club ID 25399 ·
+                  Rotary International
                 </p>
               </div>
 
               <div class="card bg-base-100 shadow-sm border border-base-200">
                 <div class="card-body p-6 flex flex-col gap-5">
                   <div class="flex items-start gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">📍</div>
+                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">
+                      📍
+                    </div>
                     <div>
                       <p class="font-semibold text-base-content">Address</p>
                       <p class="text-gray-500 text-sm leading-relaxed">
@@ -82,7 +85,9 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   <div class="divider my-0"></div>
 
                   <div class="flex items-start gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">📧</div>
+                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">
+                      📧
+                    </div>
                     <div>
                       <p class="font-semibold text-base-content">Email</p>
                       <a
@@ -97,11 +102,15 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   <div class="divider my-0"></div>
 
                   <div class="flex items-start gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">🗓️</div>
+                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">
+                      🗓️
+                    </div>
                     <div>
-                      <p class="font-semibold text-base-content">Weekly Meetings</p>
+                      <p class="font-semibold text-base-content">
+                        Weekly Meetings
+                      </p>
                       <p class="text-gray-500 text-sm">
-                        Every <strong>Saturday</strong>, 7:30 PM<br />
+                        Every <strong>Friday</strong>, 7 PM<br />
                         Rotary Bhavan, Perinthalmanna
                       </p>
                     </div>
@@ -110,9 +119,13 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   <div class="divider my-0"></div>
 
                   <div class="flex items-start gap-4">
-                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">🌐</div>
+                    <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-xl flex-shrink-0">
+                      🌐
+                    </div>
                     <div>
-                      <p class="font-semibold text-base-content">Rotary International</p>
+                      <p class="font-semibold text-base-content">
+                        Rotary International
+                      </p>
                       <a
                         href="https://www.rotary.org"
                         target="_blank"
@@ -126,11 +139,14 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                 </div>
               </div>
 
-              {/* Social Placeholder */}
               <div class="card bg-base-100 shadow-sm border border-base-200">
                 <div class="card-body p-6">
                   <p class="font-semibold text-base-content mb-3">Follow Us</p>
-                  <div class="flex gap-3">
+                  <p class="text-gray-500 text-sm leading-relaxed mb-4">
+                    Follow our social channels for full event albums, weekly
+                    activities, and club updates.
+                  </p>
+                  <div class="flex flex-wrap gap-3">
                     <a
                       href="#"
                       class="btn btn-ghost btn-sm rounded-xl border border-base-200 gap-2"
@@ -155,11 +171,17 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   ? (
                     <div class="flex flex-col items-center justify-center gap-4 py-12 text-center">
                       <div class="text-6xl">🎉</div>
-                      <h3 class="text-2xl font-extrabold text-base-content">Thank You!</h3>
+                      <h3 class="text-2xl font-extrabold text-base-content">
+                        Thank You!
+                      </h3>
                       <p class="text-gray-500 max-w-xs leading-relaxed">
-                        Your message has been received. We'll get back to you within 2–3 business days.
+                        Your message has been received. We'll get back to you
+                        within 2–3 business days.
                       </p>
-                      <a href="/contact" class="btn btn-primary rounded-full px-8 mt-2">
+                      <a
+                        href="/contact"
+                        class="btn btn-primary rounded-full px-8 mt-2"
+                      >
                         Send Another Message
                       </a>
                     </div>
@@ -182,7 +204,9 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                       <form method="POST" class="flex flex-col gap-4">
                         <div class="form-control">
                           <label class="label pb-1">
-                            <span class="label-text font-semibold">Full Name *</span>
+                            <span class="label-text font-semibold">
+                              Full Name *
+                            </span>
                           </label>
                           <input
                             type="text"
@@ -195,7 +219,9 @@ export default function ContactPage({ data }: PageProps<FormState>) {
 
                         <div class="form-control">
                           <label class="label pb-1">
-                            <span class="label-text font-semibold">Email Address *</span>
+                            <span class="label-text font-semibold">
+                              Email Address *
+                            </span>
                           </label>
                           <input
                             type="email"
@@ -220,7 +246,9 @@ export default function ContactPage({ data }: PageProps<FormState>) {
 
                         <div class="form-control">
                           <label class="label pb-1">
-                            <span class="label-text font-semibold">Profession</span>
+                            <span class="label-text font-semibold">
+                              Profession
+                            </span>
                           </label>
                           <input
                             type="text"
@@ -232,20 +260,31 @@ export default function ContactPage({ data }: PageProps<FormState>) {
 
                         <div class="form-control">
                           <label class="label pb-1">
-                            <span class="label-text font-semibold">Purpose</span>
+                            <span class="label-text font-semibold">
+                              Purpose
+                            </span>
                           </label>
-                          <select name="purpose" class="select select-bordered w-full focus:select-primary">
+                          <select
+                            name="purpose"
+                            class="select select-bordered w-full focus:select-primary"
+                          >
                             <option value="">Select...</option>
-                            <option value="membership">Interested in Membership</option>
+                            <option value="membership">
+                              Interested in Membership
+                            </option>
                             <option value="project">Project Partnership</option>
-                            <option value="donation">Donation / Sponsorship</option>
+                            <option value="donation">
+                              Donation / Sponsorship
+                            </option>
                             <option value="general">General Enquiry</option>
                           </select>
                         </div>
 
                         <div class="form-control">
                           <label class="label pb-1">
-                            <span class="label-text font-semibold">Message</span>
+                            <span class="label-text font-semibold">
+                              Message
+                            </span>
                           </label>
                           <textarea
                             name="message"
@@ -254,12 +293,16 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                           />
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-lg rounded-full w-full font-bold mt-2">
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-lg rounded-full w-full font-bold mt-2"
+                        >
                           Send Message →
                         </button>
 
                         <p class="text-xs text-gray-400 text-center">
-                          We respect your privacy and will never share your details.
+                          We respect your privacy and will never share your
+                          details.
                         </p>
                       </form>
                     </>

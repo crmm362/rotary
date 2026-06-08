@@ -10,7 +10,15 @@ const RotaryWheelLarge = () => (
     aria-label="Rotary Wheel"
   >
     {/* Outer ring */}
-    <circle cx="100" cy="100" r="96" fill="none" stroke="#F7A800" strokeWidth="7" opacity="0.9" />
+    <circle
+      cx="100"
+      cy="100"
+      r="96"
+      fill="none"
+      stroke="#F7A800"
+      strokeWidth="7"
+      opacity="0.9"
+    />
     {/* Inner hub */}
     <circle cx="100" cy="100" r="28" fill="#F7A800" opacity="0.95" />
     <circle cx="100" cy="100" r="16" fill="#17458F" />
@@ -63,10 +71,26 @@ const CheckIcon = () => (
 );
 
 const values = [
-  { icon: "🤝", title: "Fellowship", desc: "Building lasting bonds across communities and professions." },
-  { icon: "🌍", title: "Service", desc: "Dedicated to humanitarian action locally and globally." },
-  { icon: "🎓", title: "Integrity", desc: "Upholding ethical standards in personal and professional life." },
-  { icon: "💡", title: "Leadership", desc: "Inspiring change through empowered, visionary leadership." },
+  {
+    icon: "🤝",
+    title: "Fellowship",
+    desc: "Building lasting bonds across communities and professions.",
+  },
+  {
+    icon: "🌍",
+    title: "Service",
+    desc: "Dedicated to humanitarian action locally and globally.",
+  },
+  {
+    icon: "🎓",
+    title: "Integrity",
+    desc: "Upholding ethical standards in personal and professional life.",
+  },
+  {
+    icon: "💡",
+    title: "Leadership",
+    desc: "Inspiring change through empowered, visionary leadership.",
+  },
 ];
 
 const focusAreas = [
@@ -96,7 +120,7 @@ export default function Home(_props: PageProps) {
           {/* Text */}
           <div class="flex-1 text-center md:text-left">
             <div class="badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3">
-              Est. 1967 · District 3201
+              Est. 1967 · District 3201 · Club ID 25399
             </div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               Rotary Club of
@@ -104,15 +128,23 @@ export default function Home(_props: PageProps) {
               <span class="text-gradient">Perinthalmanna</span>
             </h1>
             <p class="text-lg md:text-xl text-blue-100 font-light max-w-xl mb-8 leading-relaxed">
-              Over five decades of unwavering commitment to humanity. We are{" "}
+              Over five decades of unwavering commitment to humanity. We are
+              {" "}
               <span class="text-secondary font-semibold">People of Action</span>
-              {" "}— transforming lives through service, fellowship, and integrity.
+              {" "}
+              — transforming lives through service, fellowship, and integrity.
             </p>
             <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a href="#about" class="btn btn-secondary btn-lg rounded-full font-bold px-8 shadow-lg hover:shadow-xl transition-shadow">
+              <a
+                href="#about"
+                class="btn btn-secondary btn-lg rounded-full font-bold px-8 shadow-lg hover:shadow-xl transition-shadow"
+              >
                 Discover Our Mission
               </a>
-              <a href="#contact" class="btn btn-outline btn-lg rounded-full font-bold px-8 text-white border-white/40 hover:bg-white/10 hover:border-white/60 hover:text-white">
+              <a
+                href="#contact"
+                class="btn btn-outline btn-lg rounded-full font-bold px-8 text-white border-white/40 hover:bg-white/10 hover:border-white/60 hover:text-white"
+              >
                 Join Our Club
               </a>
             </div>
@@ -135,8 +167,12 @@ export default function Home(_props: PageProps) {
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
                 </svg>
               </div>
-              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">Founded</div>
-              <div class="stat-value text-primary text-4xl font-black">1967</div>
+              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">
+                Founded
+              </div>
+              <div class="stat-value text-primary text-4xl font-black">
+                1967
+              </div>
               <div class="stat-desc text-gray-500">57+ years of service</div>
             </div>
             <div class="stat py-8 text-center">
@@ -145,8 +181,12 @@ export default function Home(_props: PageProps) {
                   <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
                 </svg>
               </div>
-              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">Members</div>
-              <div class="stat-value text-secondary text-4xl font-black">40+</div>
+              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">
+                Members
+              </div>
+              <div class="stat-value text-secondary text-4xl font-black">
+                40+
+              </div>
               <div class="stat-desc text-gray-500">Active Rotarians</div>
             </div>
             <div class="stat py-8 text-center">
@@ -155,9 +195,15 @@ export default function Home(_props: PageProps) {
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">Projects</div>
-              <div class="stat-value text-primary text-4xl font-black">500+</div>
-              <div class="stat-desc text-gray-500">Community projects completed</div>
+              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">
+                Projects
+              </div>
+              <div class="stat-value text-primary text-4xl font-black">
+                500+
+              </div>
+              <div class="stat-desc text-gray-500">
+                Community projects completed
+              </div>
             </div>
             <div class="stat py-8 text-center">
               <div class="stat-figure text-secondary hidden sm:flex">
@@ -165,8 +211,12 @@ export default function Home(_props: PageProps) {
                   <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                 </svg>
               </div>
-              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">Lives Touched</div>
-              <div class="stat-value text-secondary text-4xl font-black">10K+</div>
+              <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">
+                Lives Touched
+              </div>
+              <div class="stat-value text-secondary text-4xl font-black">
+                10K+
+              </div>
               <div class="stat-desc text-gray-500">Across Kerala & beyond</div>
             </div>
           </div>
@@ -181,12 +231,13 @@ export default function Home(_props: PageProps) {
               Who We Are
             </div>
             <h2 class="text-3xl md:text-4xl font-extrabold text-base-content mb-4">
-              A Legacy of{" "}
-              <span class="text-primary">Service Above Self</span>
+              A Legacy of <span class="text-primary">Service Above Self</span>
             </h2>
             <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-              Founded in 1967, the Rotary Club of Perinthalmanna has been a cornerstone of civil society in northern Kerala,
-              uniting professionals and community leaders in the cause of humanitarian service.
+              Founded in 1967, the Rotary Club of Perinthalmanna has been a
+              cornerstone of civil society in northern Kerala, uniting
+              professionals and community leaders in the cause of humanitarian
+              service.
             </p>
           </div>
 
@@ -198,7 +249,9 @@ export default function Home(_props: PageProps) {
               >
                 <div class="card-body p-8">
                   <div class="text-4xl mb-3">{v.icon}</div>
-                  <h3 class="card-title text-xl font-bold text-base-content mb-1">{v.title}</h3>
+                  <h3 class="card-title text-xl font-bold text-base-content mb-1">
+                    {v.title}
+                  </h3>
                   <p class="text-gray-500 leading-relaxed">{v.desc}</p>
                 </div>
               </div>
@@ -217,12 +270,13 @@ export default function Home(_props: PageProps) {
                 Focus Areas
               </div>
               <h2 class="text-3xl md:text-4xl font-extrabold text-base-content mb-4">
-                What We{" "}
-                <span class="text-primary">Stand For</span>
+                What We <span class="text-primary">Stand For</span>
               </h2>
               <p class="text-gray-500 text-lg leading-relaxed mb-8">
-                Rotary International identifies seven areas of focus where lasting change is possible.
-                Our club actively runs projects across all of them, right here in Perinthalmanna and the wider Malappuram district.
+                Rotary International identifies seven areas of focus where
+                lasting change is possible. Our club actively runs projects
+                across all of them, right here in Perinthalmanna and the wider
+                Malappuram district.
               </p>
               <ul class="space-y-3">
                 {focusAreas.map((area) => (
@@ -248,12 +302,22 @@ export default function Home(_props: PageProps) {
                     </div>
                   </div>
                   <p class="text-blue-100 leading-relaxed mb-6">
-                    Our annual free medical camps have served thousands of underprivileged families across the Malappuram district,
-                    providing diagnostics, medicines, and specialist consultations at no cost.
+                    Our annual free medical camps have served thousands of
+                    underprivileged families across the Malappuram district,
+                    providing diagnostics, medicines, and specialist
+                    consultations at no cost.
                   </p>
                   <div class="flex flex-wrap gap-2">
-                    {["Medical Camps", "Eye Care", "Dental Clinics", "Blood Drives"].map((tag) => (
-                      <span key={tag} class="badge badge-secondary badge-outline text-white border-white/30 text-xs py-2 px-3">
+                    {[
+                      "Medical Camps",
+                      "Eye Care",
+                      "Dental Clinics",
+                      "Blood Drives",
+                    ].map((tag) => (
+                      <span
+                        key={tag}
+                        class="badge badge-secondary badge-outline text-white border-white/30 text-xs py-2 px-3"
+                      >
                         {tag}
                       </span>
                     ))}
@@ -274,7 +338,9 @@ export default function Home(_props: PageProps) {
                   <p class="text-gray-700 italic text-lg font-light leading-relaxed">
                     "The greatest gift you can give is your time and service."
                   </p>
-                  <p class="text-secondary font-semibold text-sm mt-2">— Rotary International</p>
+                  <p class="text-secondary font-semibold text-sm mt-2">
+                    — Rotary International
+                  </p>
                 </div>
               </div>
             </div>
@@ -294,7 +360,10 @@ export default function Home(_props: PageProps) {
                 Upcoming <span class="text-primary">Events</span>
               </h2>
             </div>
-            <a href="/events" class="btn btn-outline btn-primary btn-sm rounded-full px-6 flex-shrink-0">
+            <a
+              href="/events"
+              class="btn btn-outline btn-primary btn-sm rounded-full px-6 flex-shrink-0"
+            >
               View All Events →
             </a>
           </div>
@@ -303,19 +372,31 @@ export default function Home(_props: PageProps) {
             <div class="card bg-gradient-to-br from-secondary/10 to-base-100 border border-secondary/30 shadow-md card-hover md:col-span-2">
               <div class="card-body p-7">
                 <div class="flex items-center gap-3 mb-3">
-                  <div class="text-3xl w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/20">🎵</div>
+                  <div class="text-3xl w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/20">
+                    🎵
+                  </div>
                   <div>
-                    <span class="badge badge-secondary text-xs font-bold">✨ Featured</span>
+                    <span class="badge badge-secondary text-xs font-bold">
+                      ✨ Featured
+                    </span>
                     <p class="text-xs text-gray-400 mt-0.5">Cultural Event</p>
                   </div>
                 </div>
-                <h3 class="text-xl font-extrabold text-base-content mb-1">Musical Evening</h3>
-                <p class="text-sm text-gray-400 mb-3">📅 May 2026 — Date TBD &nbsp;·&nbsp; 📍 Venue TBD</p>
+                <h3 class="text-xl font-extrabold text-base-content mb-1">
+                  Musical Evening
+                </h3>
+                <p class="text-sm text-gray-400 mb-3">
+                  📅 May 2026 — Date TBD &nbsp;·&nbsp; 📍 Venue TBD
+                </p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  An enchanting evening of classical and contemporary music, raising funds for our community health initiatives. Details being finalised.
+                  An enchanting evening of classical and contemporary music,
+                  raising funds for our community health initiatives. Details
+                  being finalised.
                 </p>
                 <div class="mt-4">
-                  <span class="badge badge-secondary badge-outline text-xs">Stay tuned for updates</span>
+                  <span class="badge badge-secondary badge-outline text-xs">
+                    Stay tuned for updates
+                  </span>
                 </div>
               </div>
             </div>
@@ -323,11 +404,16 @@ export default function Home(_props: PageProps) {
             <div class="card bg-base-100 border border-base-200 shadow-sm card-hover">
               <div class="card-body p-7">
                 <div class="text-3xl mb-3">🏛️</div>
-                <span class="badge badge-primary badge-outline text-xs font-semibold mb-2">Club Meeting</span>
-                <h3 class="text-lg font-bold text-base-content mb-1">Club Assembly</h3>
+                <span class="badge badge-primary badge-outline text-xs font-semibold mb-2">
+                  Club Meeting
+                </span>
+                <h3 class="text-lg font-bold text-base-content mb-1">
+                  Club Assembly
+                </h3>
                 <p class="text-sm text-gray-400 mb-2">📅 April 26, 2026</p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  Quarterly assembly to review projects and plan the upcoming quarter.
+                  Quarterly assembly to review projects and plan the upcoming
+                  quarter.
                 </p>
               </div>
             </div>
@@ -354,7 +440,8 @@ export default function Home(_props: PageProps) {
                 date: "April 12, 2026",
                 tag: "Club Activity",
                 title: "Club Assembly — April 2026",
-                excerpt: "The April club assembly reviewed the progress of all ongoing service projects and approved budgets for the upcoming medical camp.",
+                excerpt:
+                  "The April club assembly reviewed the progress of all ongoing service projects and approved budgets for the upcoming medical camp.",
                 icon: "📋",
                 tagClass: "badge-primary",
               },
@@ -362,7 +449,8 @@ export default function Home(_props: PageProps) {
                 date: "March 8, 2026",
                 tag: "Youth Service",
                 title: "Interact Club Inaugurated at MES HSS",
-                excerpt: "A new Interact Club was successfully launched at MES Higher Secondary School, extending Rotary's values of service to young students.",
+                excerpt:
+                  "A new Interact Club was successfully launched at MES Higher Secondary School, extending Rotary's values of service to young students.",
                 icon: "🎓",
                 tagClass: "badge-success",
               },
@@ -370,20 +458,32 @@ export default function Home(_props: PageProps) {
                 date: "January 18, 2026",
                 tag: "Service Project",
                 title: "Blood Donation Camp — 60+ Units Collected",
-                excerpt: "Our annual blood donation camp in collaboration with the district blood bank was a tremendous success with strong community participation.",
+                excerpt:
+                  "Our annual blood donation camp in collaboration with the district blood bank was a tremendous success with strong community participation.",
                 icon: "🩸",
                 tagClass: "badge-error",
               },
             ].map((item) => (
-              <div key={item.title} class="card bg-base-100 border border-base-200 shadow-sm card-hover">
+              <div
+                key={item.title}
+                class="card bg-base-100 border border-base-200 shadow-sm card-hover"
+              >
                 <div class="card-body p-6">
                   <div class="flex items-center gap-2 mb-3">
                     <span class="text-2xl">{item.icon}</span>
-                    <span class={`badge ${item.tagClass} badge-outline text-xs font-semibold`}>{item.tag}</span>
+                    <span
+                      class={`badge ${item.tagClass} badge-outline text-xs font-semibold`}
+                    >
+                      {item.tag}
+                    </span>
                   </div>
                   <p class="text-xs text-gray-400 mb-2">{item.date}</p>
-                  <h3 class="font-bold text-base-content text-base leading-snug mb-2">{item.title}</h3>
-                  <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">{item.excerpt}</p>
+                  <h3 class="font-bold text-base-content text-base leading-snug mb-2">
+                    {item.title}
+                  </h3>
+                  <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">
+                    {item.excerpt}
+                  </p>
                 </div>
               </div>
             ))}
@@ -392,9 +492,13 @@ export default function Home(_props: PageProps) {
       </section>
 
       {/* ── CTA ── */}
-      <section id="contact" class="py-20 hero-gradient relative overflow-hidden">
+      <section
+        id="contact"
+        class="py-20 hero-gradient relative overflow-hidden"
+      >
         <div class="absolute inset-0 opacity-10">
-          <div class="absolute top-0 left-0 w-full h-full"
+          <div
+            class="absolute top-0 left-0 w-full h-full"
             style="background-image: radial-gradient(circle, #F7A800 1px, transparent 1px); background-size: 40px 40px;"
           />
         </div>
@@ -406,8 +510,9 @@ export default function Home(_props: PageProps) {
             Ready to Make a Difference?
           </h2>
           <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed mb-10">
-            Join a community of professionals committed to creating positive change.
-            The Rotary Club of Perinthalmanna welcomes individuals who share our passion for service.
+            Join a community of professionals committed to creating positive
+            change. The Rotary Club of Perinthalmanna welcomes individuals who
+            share our passion for service.
           </p>
           <div class="flex flex-wrap gap-4 justify-center mb-10">
             <a
@@ -432,11 +537,11 @@ export default function Home(_props: PageProps) {
             </div>
             <div class="flex items-center gap-2 text-sm">
               <span class="text-secondary text-lg">🗓</span>
-              Meetings: Every Saturday, 7:30 PM
+              Meetings: Every Friday, 7 PM
             </div>
             <div class="flex items-center gap-2 text-sm">
               <span class="text-secondary text-lg">🌐</span>
-              District 3201 · Rotary International
+              District 3201 · Club ID 25399 · Rotary International
             </div>
           </div>
         </div>

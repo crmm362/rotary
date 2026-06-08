@@ -37,7 +37,7 @@ const boardMembers: Member[] = [
     role: "Immediate Past President",
     profession: "Doctor",
     initials: "KK",
-    photo: "/members/kasim-kolakkadan.jpg",
+    photo: "/members/kasim-k.jpeg",
     isPast: true,
   },
   {
@@ -90,7 +90,7 @@ const directors: Member[] = [
     role: "Sergeant at Arms",
     profession: "Rotarian",
     initials: "S",
-    photo: "/members/salim.jpg",
+    photo: "/members/salim.jpeg",
   },
   {
     name: "Rtn. Suresh Kollathodi",
@@ -233,7 +233,7 @@ const generalMembers: Member[] = [
     role: "Member",
     profession: "Doctor",
     initials: "KK",
-    photo: "/members/kasim-kolakkadan.jpg",
+    photo: "/members/kasim-k.jpeg",
   },
   {
     name: "Rtn. Narendradev",
@@ -254,7 +254,7 @@ const generalMembers: Member[] = [
     role: "Member",
     profession: "Rotarian",
     initials: "S",
-    photo: "/members/salim.jpg",
+    photo: "/members/salim.jpeg",
   },
 ];
 

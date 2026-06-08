@@ -34,7 +34,14 @@ export default function Footer() {
                 />
               );
             })}
-            <circle cx="50" cy="50" r="47" fill="none" stroke="#F7A800" strokeWidth="3.5" />
+            <circle
+              cx="50"
+              cy="50"
+              r="47"
+              fill="none"
+              stroke="#F7A800"
+              strokeWidth="3.5"
+            />
           </svg>
           <p class="text-lg font-semibold text-white">
             Rotary Club of Perinthalmanna
@@ -43,25 +50,39 @@ export default function Footer() {
             "Service Above Self"
           </p>
           <div class="flex gap-4 mt-2">
-            <a href="#about" class="text-sm text-gray-400 hover:text-rotary-gold transition-colors">
+            <a
+              href="#about"
+              class="text-sm text-gray-400 hover:text-rotary-gold transition-colors"
+            >
               About
             </a>
             <span class="text-gray-600">·</span>
-            <a href="#projects" class="text-sm text-gray-400 hover:text-rotary-gold transition-colors">
+            <a
+              href="#projects"
+              class="text-sm text-gray-400 hover:text-rotary-gold transition-colors"
+            >
               Projects
             </a>
             <span class="text-gray-600">·</span>
-            <a href="#events" class="text-sm text-gray-400 hover:text-rotary-gold transition-colors">
+            <a
+              href="#events"
+              class="text-sm text-gray-400 hover:text-rotary-gold transition-colors"
+            >
               Events
             </a>
             <span class="text-gray-600">·</span>
-            <a href="#contact" class="text-sm text-gray-400 hover:text-rotary-gold transition-colors">
+            <a
+              href="#contact"
+              class="text-sm text-gray-400 hover:text-rotary-gold transition-colors"
+            >
               Contact
             </a>
           </div>
           <div class="divider divider-neutral my-1 w-48"></div>
           <p class="text-xs text-gray-500">
-            © {currentYear} Rotary Club of Perinthalmanna · Est. 1967 · District 3201
+            © {currentYear}{" "}
+            Rotary Club of Perinthalmanna · Est. 1967 · District 3201 · Club ID
+            25399
           </p>
           <p class="text-xs text-gray-600">
             Rotary International · People of Action
