@@ -140,7 +140,7 @@ export default function MobileDrawer() {
             Join Our Club
           </a>
           <p class="text-center text-xs text-gray-400 mt-3">
-            Est. 1967 · District 3201
+            Est. 1967 · District 3204
           </p>
         </div>
       </div>

@@ -61,7 +61,7 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   Rotary Club of Perinthalmanna
                 </h2>
                 <p class="text-gray-500 mt-2 leading-relaxed">
-                  Established 1967 · Rotary District 3201 · Club ID 25399 ·
+                  Established 1967 · Rotary District 3204 · Club ID 25399 ·
                   Rotary International
                 </p>
               </div>
@@ -75,7 +75,8 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                     <div>
                       <p class="font-semibold text-base-content">Address</p>
                       <p class="text-gray-500 text-sm leading-relaxed">
-                        Rotary Bhavan, Perinthalmanna<br />
+                        Rotary Hall, Thanneer Panthal<br />
+                        Pathaikara, Perinthalmanna<br />
                         Malappuram – 679 322<br />
                         Kerala, India
                       </p>
@@ -111,7 +112,7 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                       </p>
                       <p class="text-gray-500 text-sm">
                         Every <strong>Friday</strong>, 7 PM<br />
-                        Rotary Bhavan, Perinthalmanna
+                        Rotary Hall, Pathaikara, Perinthalmanna
                       </p>
                     </div>
                   </div>

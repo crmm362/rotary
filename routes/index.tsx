@@ -120,7 +120,7 @@ export default function Home(_props: PageProps) {
           {/* Text */}
           <div class="flex-1 text-center md:text-left">
             <div class="badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3">
-              Est. 1967 · District 3201 · Club ID 25399
+              Est. 1967 · District 3204 · Club ID 25399
             </div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               Rotary Club of
@@ -368,34 +368,34 @@ export default function Home(_props: PageProps) {
             </a>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {/* Featured: Musical Evening */}
+            {/* Featured: Installation Ceremony */}
             <div class="card bg-gradient-to-br from-secondary/10 to-base-100 border border-secondary/30 shadow-md card-hover md:col-span-2">
               <div class="card-body p-7">
                 <div class="flex items-center gap-3 mb-3">
                   <div class="text-3xl w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/20">
-                    🎵
+                    🎖️
                   </div>
                   <div>
                     <span class="badge badge-secondary text-xs font-bold">
                       ✨ Featured
                     </span>
-                    <p class="text-xs text-gray-400 mt-0.5">Cultural Event</p>
+                    <p class="text-xs text-gray-400 mt-0.5">Club Event</p>
                   </div>
                 </div>
                 <h3 class="text-xl font-extrabold text-base-content mb-1">
-                  Musical Evening
+                  Installation Ceremony 2026–27
                 </h3>
                 <p class="text-sm text-gray-400 mb-3">
-                  📅 May 2026 — Date TBD &nbsp;·&nbsp; 📍 Venue TBD
+                  📅 Saturday, June 20, 2026 · 7:00 PM &nbsp;·&nbsp; 📍 IMA Hall, Perinthalmanna
                 </p>
                 <p class="text-gray-600 text-sm leading-relaxed">
-                  An enchanting evening of classical and contemporary music,
-                  raising funds for our community health initiatives. Details
-                  being finalised.
+                  Installation of Rtn PHF Kuriakose KK as President, along with
+                  his team of Office Bearers for the Rotary year 2026–27. You and
+                  your family are warmly invited to join the celebration.
                 </p>
                 <div class="mt-4">
                   <span class="badge badge-secondary badge-outline text-xs">
-                    Stay tuned for updates
+                    Personal invitation from the President
                   </span>
                 </div>
               </div>
@@ -541,7 +541,7 @@ export default function Home(_props: PageProps) {
             </div>
             <div class="flex items-center gap-2 text-sm">
               <span class="text-secondary text-lg">🌐</span>
-              District 3201 · Club ID 25399 · Rotary International
+              District 3204 · Club ID 25399 · Rotary International
             </div>
           </div>
         </div>

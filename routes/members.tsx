@@ -42,14 +42,14 @@ const boardMembers: Member[] = [
   },
   {
     name: "Rtn. Asgar S.A.",
-    role: "President Elect",
+    role: "President Elect 2027-28",
     profession: "Business",
     initials: "AS",
     photo: "/members/asgar-sa.jpeg",
   },
   {
     name: "Rtn. MPHF Sharath Namboothiri",
-    role: "Rotary Foundation Chair",
+    role: "VP & Rotary Foundation Chair",
     profession: "Business",
     initials: "SN",
     photo: "/members/sarat-n.jpeg",
@@ -79,11 +79,11 @@ const directors: Member[] = [
     photo: "/members/jayachandran-ak.jpeg",
   },
   {
-    name: "Rtn. Liyakath Ali Khan",
+    name: "Rtn. Adv. AbdulKhadar",
     role: "Service Project Chair",
-    profession: "Business",
-    initials: "LA",
-    photo: "/members/liaqat-ali-khan.jpeg",
+    profession: "Advocate",
+    initials: "AK",
+    photo: "/members/abdul-khadar.jpg",
   },
   {
     name: "Rtn. Salim",
@@ -106,9 +106,23 @@ const directors: Member[] = [
     initials: "PV",
     photo: "/members/prasad-v.jpeg",
   },
+  {
+    name: "Rtn. Ayoob K.P.",
+    role: "Joint Secretary",
+    profession: "Business",
+    initials: "AK",
+    photo: "/members/ayoob-kp.jpeg",
+  },
 ];
 
 const generalMembers: Member[] = [
+  {
+    name: "Balachandran MM",
+    role: "Member",
+    profession: "Software Engineer",
+    initials: "BM",
+    photo: "/members/balachandran-mm.jpg",
+  },
   {
     name: "Rtn. Dr. Jayachandran A.K.",
     role: "Member",
@@ -394,7 +408,7 @@ export default function MembersPage() {
               Committees
             </div>
             <h2 class="text-2xl font-extrabold text-base-content">
-              Chairs & District Roles
+              Committee Chairs
             </h2>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">

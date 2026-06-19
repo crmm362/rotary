@@ -10,24 +10,26 @@ type Event = {
   status: "upcoming" | "tbd" | "past";
   icon: string;
   highlights?: string[];
+  featured?: boolean;
 };
 
 const upcomingEvents: Event[] = [
   {
-    title: "Musical Evening",
-    date: "May 2026 — Date TBD",
-    venue: "Venue yet to be decided",
-    category: "Cultural",
+    title: "Installation Ceremony 2026–27",
+    date: "Saturday, June 20, 2026 · 7:00 PM",
+    venue: "IMA Hall, Perinthalmanna",
+    category: "Club Event",
     description:
-      "An enchanting evening of classical and contemporary music to raise funds for our community health initiatives. Featuring local and regional artists in a memorable night of melody and fellowship.",
-    status: "tbd",
-    icon: "🎵",
-    highlights: ["Live performances", "Fundraiser for healthcare", "Cultural fellowship"],
+      "Installation of Rtn PHF Kuriakose KK as President, along with his team of Office Bearers for the Rotary year 2026–27. Members, families, and well-wishers are warmly invited to join the celebration.",
+    status: "upcoming",
+    icon: "🎖️",
+    featured: true,
+    highlights: ["President: Rtn PHF Kuriakose KK", "Office Bearers 2026–27", "Families welcome"],
   },
   {
     title: "Club Assembly",
     date: "April 26, 2026",
-    venue: "Rotary Bhavan, Perinthalmanna",
+    venue: "Rotary Hall, Pathaikara, Perinthalmanna",
     category: "Club Meeting",
     description:
       "Quarterly club assembly to review ongoing projects, approve budgets, and plan the upcoming quarter's service activities.",
@@ -97,7 +99,7 @@ const categoryColors: Record<string, string> = {
 };
 
 function UpcomingCard({ event }: { event: Event }) {
-  const isFeatured = event.status === "tbd";
+  const isFeatured = event.featured ?? event.status === "tbd";
   return (
     <div class={`card shadow-md border ${isFeatured ? "border-secondary/40 bg-gradient-to-br from-secondary/5 to-base-100" : "border-base-200 bg-base-100"} card-hover`}>
       <div class="card-body p-7">
@@ -137,7 +139,9 @@ function UpcomingCard({ event }: { event: Event }) {
           <div class="mt-5 pt-5 border-t border-secondary/20">
             <div class="alert bg-secondary/10 border-secondary/20 py-3">
               <span class="text-sm text-secondary font-semibold">
-                🎵 Details being finalised — stay tuned for updates!
+                {event.status === "tbd"
+                  ? "🗓️ Details being finalised — stay tuned for updates!"
+                  : "🎖️ You and your family are warmly invited. — Rtn Kuriakose KK, President"}
               </span>
             </div>
           </div>

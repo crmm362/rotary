@@ -81,7 +81,7 @@ export default function Footer() {
           <div class="divider divider-neutral my-1 w-48"></div>
           <p class="text-xs text-gray-500">
             © {currentYear}{" "}
-            Rotary Club of Perinthalmanna · Est. 1967 · District 3201 · Club ID
+            Rotary Club of Perinthalmanna · Est. 1967 · District 3204 · Club ID
             25399
           </p>
           <p class="text-xs text-gray-600">
