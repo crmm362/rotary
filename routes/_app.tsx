@@ -8,7 +8,7 @@ export default function App({ Component }: PageProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Rotary Club of Perinthalmanna — Service Above Self since 1967"
+          content="Rotary Club of Perinthalmanna — Service Above Self since 1988"
         />
         <title>Rotary Club of Perinthalmanna</title>
         <link rel="stylesheet" href="/styles.css" />

@@ -61,7 +61,7 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                   Rotary Club of Perinthalmanna
                 </h2>
                 <p class="text-gray-500 mt-2 leading-relaxed">
-                  Established 1967 · Rotary District 3204 · Club ID 25399 ·
+                  Established 1988 · Rotary District 3204 · Club ID 25399 ·
                   Rotary International
                 </p>
               </div>

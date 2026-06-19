@@ -120,7 +120,7 @@ export default function Home(_props: PageProps) {
           {/* Text */}
           <div class="flex-1 text-center md:text-left">
             <div class="badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3">
-              Est. 1967 · District 3204 · Club ID 25399
+              Est. 1988 · District 3204 · Club ID 25399
             </div>
             <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               Rotary Club of
@@ -128,7 +128,7 @@ export default function Home(_props: PageProps) {
               <span class="text-gradient">Perinthalmanna</span>
             </h1>
             <p class="text-lg md:text-xl text-blue-100 font-light max-w-xl mb-8 leading-relaxed">
-              Over five decades of unwavering commitment to humanity. We are
+              Over three decades of unwavering commitment to humanity. We are
               {" "}
               <span class="text-secondary font-semibold">People of Action</span>
               {" "}
@@ -168,12 +168,12 @@ export default function Home(_props: PageProps) {
                 </svg>
               </div>
               <div class="stat-title text-sm font-medium text-gray-500 uppercase tracking-wide">
-                Founded
+                Chartered
               </div>
               <div class="stat-value text-primary text-4xl font-black">
-                1967
+                1988
               </div>
-              <div class="stat-desc text-gray-500">57+ years of service</div>
+              <div class="stat-desc text-gray-500">23 May 1988</div>
             </div>
             <div class="stat py-8 text-center">
               <div class="stat-figure text-secondary hidden sm:flex">
@@ -234,7 +234,7 @@ export default function Home(_props: PageProps) {
               A Legacy of <span class="text-primary">Service Above Self</span>
             </h2>
             <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
-              Founded in 1967, the Rotary Club of Perinthalmanna has been a
+              Chartered on 23 May 1988, the Rotary Club of Perinthalmanna has been a
               cornerstone of civil society in northern Kerala, uniting
               professionals and community leaders in the cause of humanitarian
               service.
