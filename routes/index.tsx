@@ -1,59 +1,12 @@
 import { type PageProps } from "$fresh/server.ts";
 import Navbar from "../components/Navbar.tsx";
 import Footer from "../components/Footer.tsx";
-
 const RotaryWheelLarge = () => (
-  <svg
-    viewBox="0 0 200 200"
-    xmlns="http://www.w3.org/2000/svg"
-    class="w-48 h-48 md:w-64 md:h-64 rotary-wheel drop-shadow-2xl"
-    aria-label="Rotary Wheel"
-  >
-    {/* Outer ring */}
-    <circle
-      cx="100"
-      cy="100"
-      r="96"
-      fill="none"
-      stroke="#F7A800"
-      strokeWidth="7"
-      opacity="0.9"
-    />
-    {/* Inner hub */}
-    <circle cx="100" cy="100" r="28" fill="#F7A800" opacity="0.95" />
-    <circle cx="100" cy="100" r="16" fill="#17458F" />
-    {/* 6 spokes */}
-    {[0, 60, 120, 180, 240, 300].map((angle, i) => {
-      const rad = (angle * Math.PI) / 180;
-      const x1 = 100 + 30 * Math.sin(rad);
-      const y1 = 100 - 30 * Math.cos(rad);
-      const x2 = 100 + 88 * Math.sin(rad);
-      const y2 = 100 - 88 * Math.cos(rad);
-      return (
-        <line
-          key={i}
-          x1={x1}
-          y1={y1}
-          x2={x2}
-          y2={y2}
-          stroke="#F7A800"
-          strokeWidth="10"
-          strokeLinecap="round"
-          opacity="0.9"
-        />
-      );
-    })}
-    {/* Gear teeth on outer rim */}
-    {Array.from({ length: 24 }).map((_, i) => {
-      const angle = (i * 360) / 24;
-      const rad = (angle * Math.PI) / 180;
-      const x = 100 + 96 * Math.sin(rad);
-      const y = 100 - 96 * Math.cos(rad);
-      return (
-        <circle key={i} cx={x} cy={y} r="5" fill="#F7A800" opacity="0.7" />
-      );
-    })}
-  </svg>
+  <img
+    src="/logo/rotary-emblem.png"
+    alt="Rotary International"
+    class="w-48 h-48 md:w-64 md:h-64 drop-shadow-2xl"
+  />
 );
 
 const CheckIcon = () => (
@@ -499,7 +452,7 @@ export default function Home(_props: PageProps) {
         <div class="absolute inset-0 opacity-10">
           <div
             class="absolute top-0 left-0 w-full h-full"
-            style="background-image: radial-gradient(circle, #F7A800 1px, transparent 1px); background-size: 40px 40px;"
+            style="background-image: radial-gradient(circle, #f7a81b 1px, transparent 1px); background-size: 40px 40px;"
           />
         </div>
         <div class="relative max-w-4xl mx-auto px-6 text-center">

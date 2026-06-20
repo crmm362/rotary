@@ -9,7 +9,7 @@ export default {
       colors: {
         rotary: {
           blue: "#17458F",
-          gold: "#F7A800",
+          gold: "#f7a81b",
           "blue-dark": "#0f2d5e",
           "blue-light": "#2a5fad",
         },
@@ -26,7 +26,7 @@ export default {
         rotary: {
           "primary": "#17458F",
           "primary-content": "#ffffff",
-          "secondary": "#F7A800",
+          "secondary": "#f7a81b",
           "secondary-content": "#1a1a1a",
           "accent": "#2a5fad",
           "accent-content": "#ffffff",

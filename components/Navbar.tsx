@@ -6,37 +6,13 @@ export default function Navbar() {
       <div class="navbar-start">
         <MobileDrawer />
         <a href="/" class="flex items-center gap-3 ml-1">
-          <svg
-            width="36"
-            height="36"
-            viewBox="0 0 100 100"
-            xmlns="http://www.w3.org/2000/svg"
+          <img
+            src="/logo/rotary-emblem.png"
+            alt="Rotary"
+            width="40"
+            height="40"
             class="flex-shrink-0"
-          >
-            <circle cx="50" cy="50" r="48" fill="#17458F" />
-            <circle cx="50" cy="50" r="14" fill="#F7A800" />
-            <circle cx="50" cy="50" r="8" fill="#17458F" />
-            {[0, 45, 90, 135, 180, 225, 270, 315].map((angle, i) => {
-              const rad = (angle * Math.PI) / 180;
-              const x1 = 50 + 15 * Math.sin(rad);
-              const y1 = 50 - 15 * Math.cos(rad);
-              const x2 = 50 + 38 * Math.sin(rad);
-              const y2 = 50 - 38 * Math.cos(rad);
-              return (
-                <line
-                  key={i}
-                  x1={x1}
-                  y1={y1}
-                  x2={x2}
-                  y2={y2}
-                  stroke="#F7A800"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                />
-              );
-            })}
-            <circle cx="50" cy="50" r="47" fill="none" stroke="#F7A800" strokeWidth="3.5" />
-          </svg>
+          />
           <div class="flex flex-col leading-tight">
             <span class="text-base font-bold text-rotary-blue">
               Rotary Club

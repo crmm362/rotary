@@ -20,11 +20,11 @@
   }
 
   .gold-gradient {
-    background: linear-gradient(90deg, #F7A800, #fbbf24);
+    background: linear-gradient(90deg, #f7a81b, #fbbf24);
   }
 
   .text-gradient {
-    background: linear-gradient(90deg, #F7A800, #fbbf24);
+    background: linear-gradient(90deg, #f7a81b, #fbbf24);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -37,14 +37,5 @@
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: 0 20px 40px -8px rgba(23, 69, 143, 0.2);
-  }
-
-  .rotary-wheel {
-    animation: spin-slow 20s linear infinite;
-  }
-
-  @keyframes spin-slow {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
   }
 }
