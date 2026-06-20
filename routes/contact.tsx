@@ -1,6 +1,7 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
 import Navbar from "../components/Navbar.tsx";
 import Footer from "../components/Footer.tsx";
+import SocialLinks from "../components/SocialLinks.tsx";
 
 type FormState = {
   success?: boolean;
@@ -147,20 +148,7 @@ export default function ContactPage({ data }: PageProps<FormState>) {
                     Follow our social channels for full event albums, weekly
                     activities, and club updates.
                   </p>
-                  <div class="flex flex-wrap gap-3">
-                    <a
-                      href="#"
-                      class="btn btn-ghost btn-sm rounded-xl border border-base-200 gap-2"
-                    >
-                      📘 Facebook
-                    </a>
-                    <a
-                      href="#"
-                      class="btn btn-ghost btn-sm rounded-xl border border-base-200 gap-2"
-                    >
-                      📸 Instagram
-                    </a>
-                  </div>
+                  <SocialLinks />
                 </div>
               </div>
             </div>

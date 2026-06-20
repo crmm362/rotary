@@ -111,25 +111,34 @@ export default function Home(_props: PageProps) {
         <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
           {/* Text */}
           <div class="flex-1 text-center md:text-left">
-            <div class="badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3">
+            <div class="anim-fade-up inline-flex items-center gap-2 glass text-white rounded-full pl-3 pr-4 py-2 mb-5 text-xs sm:text-sm font-semibold tracking-wide">
+              <span class="relative flex h-2.5 w-2.5">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75">
+                </span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary">
+                </span>
+              </span>
+              🎉 Website Launch &amp; Installation Ceremony — 20 June 2026
+            </div>
+            <div class="anim-fade-up anim-d1 badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3 block sm:inline-flex w-fit mx-auto md:mx-0">
               Est. 1988 · District 3204 · Club ID 25399
             </div>
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+            <h1 class="anim-fade-up anim-d2 text-4xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               Rotary Club of
               <br />
               <span class="text-gradient">Perinthalmanna</span>
             </h1>
-            <p class="text-lg md:text-xl text-blue-100 font-light max-w-xl mb-8 leading-relaxed">
+            <p class="anim-fade-up anim-d3 text-lg md:text-xl text-blue-100 font-light max-w-xl mb-8 leading-relaxed">
               Over three decades of unwavering commitment to humanity. We are
               {" "}
               <span class="text-secondary font-semibold">People of Action</span>
               {" "}
               — transforming lives through service, fellowship, and integrity.
             </p>
-            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div class="anim-fade-up anim-d4 flex flex-wrap gap-4 justify-center md:justify-start">
               <a
                 href="#about"
-                class="btn btn-secondary btn-lg rounded-full font-bold px-8 shadow-lg hover:shadow-xl transition-shadow"
+                class="btn btn-secondary btn-lg rounded-full font-bold px-8 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
               >
                 Discover Our Mission
               </a>
@@ -143,8 +152,12 @@ export default function Home(_props: PageProps) {
           </div>
 
           {/* Wheel */}
-          <div class="flex-shrink-0 flex items-center justify-center">
-            <RotaryWheelLarge />
+          <div class="anim-pop anim-d2 flex-shrink-0 flex items-center justify-center relative">
+            <div class="absolute w-64 h-64 md:w-80 md:h-80 rounded-full bg-secondary/20 blur-3xl pointer-events-none">
+            </div>
+            <div class="float glow relative">
+              <RotaryWheelLarge />
+            </div>
           </div>
         </div>
       </section>

@@ -159,13 +159,17 @@ export default function GalleryPage() {
           </p>
           <div class="flex flex-wrap justify-center gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/rotary.perinthalmanna"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-primary btn-lg rounded-full px-8 font-bold"
             >
               📘 Facebook
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/rotary.perinthalmanna"
+              target="_blank"
+              rel="noopener noreferrer"
               class="btn btn-outline btn-primary btn-lg rounded-full px-8 font-bold"
             >
               📸 Instagram

@@ -4,6 +4,7 @@ const navLinks = [
   { href: "/", label: "Home", icon: "🏠" },
   { href: "/members", label: "Members", icon: "👥" },
   { href: "/events", label: "Events", icon: "📅" },
+  { href: "/event-flow", label: "Programme", icon: "🗒️" },
   { href: "/gallery", label: "Gallery", icon: "📸" },
   { href: "/contact", label: "Contact", icon: "✉️" },
 ];

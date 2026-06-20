@@ -1,3 +1,5 @@
+import SocialLinks from "./SocialLinks.tsx";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -13,6 +15,7 @@ export default function Footer() {
           <p class="text-sm text-gray-400 italic">
             "Service Above Self"
           </p>
+          <SocialLinks variant="icons" />
           <div class="flex gap-4 mt-2">
             <a
               href="#about"
