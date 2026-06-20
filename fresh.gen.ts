@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $_middleware from "./routes/_middleware.ts";
 import * as $contact from "./routes/contact.tsx";
 import * as $events from "./routes/events.tsx";
 import * as $gallery from "./routes/gallery.tsx";
@@ -14,6 +15,7 @@ import type { Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/_middleware.ts": $_middleware,
     "./routes/contact.tsx": $contact,
     "./routes/events.tsx": $events,
     "./routes/gallery.tsx": $gallery,
