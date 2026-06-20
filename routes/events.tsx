@@ -11,6 +11,7 @@ type Event = {
   icon: string;
   highlights?: string[];
   featured?: boolean;
+  link?: string;
 };
 
 const upcomingEvents: Event[] = [
@@ -24,68 +25,150 @@ const upcomingEvents: Event[] = [
     status: "upcoming",
     icon: "🎖️",
     featured: true,
+    link: "/event-flow",
     highlights: ["President: Rtn PHF Kuriakose KK", "Office Bearers 2026–27", "Families welcome"],
   },
   {
-    title: "Club Assembly",
-    date: "April 26, 2026",
+    title: "Weekly Club Meeting",
+    date: "Every Friday · 7:00 PM",
     venue: "Rotary Hall, Pathaikara, Perinthalmanna",
     category: "Club Meeting",
     description:
-      "Quarterly club assembly to review ongoing projects, approve budgets, and plan the upcoming quarter's service activities.",
+      "Our regular weekly fellowship meeting — project updates, guest talks, and planning. Members and prospective Rotarians are always welcome.",
     status: "upcoming",
-    icon: "🏛️",
-    highlights: ["Project review", "Budget approval", "Q2 planning"],
+    icon: "🤝",
+    highlights: ["Fellowship", "Project updates", "Guest speakers"],
   },
   {
-    title: "Free Medical Camp",
-    date: "May 3, 2026",
-    venue: "Govt. Hospital Grounds, Perinthalmanna",
-    category: "Service Project",
+    title: "First Club Assembly — Rotary Year 2026–27",
+    date: "July 2026",
+    venue: "Rotary Hall, Pathaikara, Perinthalmanna",
+    category: "Club Meeting",
     description:
-      "Annual free medical camp offering general medicine, dental, and ophthalmology consultations to underprivileged communities.",
+      "The opening assembly of the new Rotary year, where the incoming board presents goals, committees, and the service calendar for 2026–27.",
     status: "upcoming",
-    icon: "🏥",
-    highlights: ["General medicine", "Dental care", "Eye screening", "Free medicines"],
+    icon: "🏛️",
+    highlights: ["Goal setting", "Committees", "Annual plan"],
   },
 ];
 
 const pastEvents: Event[] = [
   {
-    title: "Annual Installation Ceremony 2025–26",
-    date: "July 12, 2025",
-    venue: "Hotel Paramount, Perinthalmanna",
-    category: "Club Event",
-    description: "Installation of new club officers for the Rotary year 2025–26. Club leaders were felicitated and annual plans were announced.",
+    title: "District Governor's Official Visit",
+    date: "May 8, 2026",
+    venue: "IMA Hall, Perinthalmanna",
+    category: "District",
+    description: "The District Governor's official visit, during which the ₹6 Lakh Jubilee Junction Beautification — a flagship public image project — was inaugurated.",
     status: "past",
     icon: "🎖️",
   },
   {
-    title: "Blood Donation Camp",
-    date: "January 18, 2026",
-    venue: "Perinthalmanna Blood Bank",
-    category: "Service Project",
-    description: "Over 60 units of blood collected in collaboration with the district blood bank. Members and public participated actively.",
+    title: "Emergency Life Support & AED Training",
+    date: "April 7, 2026 · World Health Day",
+    venue: "Nehru Stadium, Perinthalmanna",
+    category: "Health",
+    description: "AED awareness and Basic Life Support training in partnership with IMA, reaching 100+ participants. Faculty: Rtn. Dr. Anand Sreeram.",
     status: "past",
-    icon: "🩸",
+    icon: "⛑️",
   },
   {
-    title: "Vocational Excellence Awards",
-    date: "February 23, 2026",
-    venue: "Town Hall, Perinthalmanna",
-    category: "Awards",
-    description: "Annual awards recognising outstanding professionals and students from the Perinthalmanna region across various vocational fields.",
-    status: "past",
-    icon: "🏆",
-  },
-  {
-    title: "Interactors Inauguration",
+    title: "Iftar Meet",
     date: "March 8, 2026",
-    venue: "MES Higher Secondary School",
-    category: "Youth Service",
-    description: "Launched a new Interact Club at MES HSS Perinthalmanna, extending Rotary values of service to young students.",
+    venue: "Perinthalmanna",
+    category: "Fellowship",
+    description: "Joint prayers and breaking of fast together — a heartfelt evening fostering equality and fellowship among all members.",
     status: "past",
-    icon: "🎓",
+    icon: "🌙",
+  },
+  {
+    title: "Rotary Kitchen League (RKPL)",
+    date: "February 6, 2026",
+    venue: "Perinthalmanna",
+    category: "Fellowship",
+    description: "A vibrant culinary fellowship competition across five teams, judged by professional cookery experts. Winners: Rotary Chef Royale.",
+    status: "past",
+    icon: "🍳",
+  },
+  {
+    title: "Rotary Tour — Ooty & Kotagiri",
+    date: "January 10–11, 2026",
+    venue: "Ooty & Kotagiri",
+    category: "Fellowship",
+    description: "A two-day friendship trip with scenic sightseeing and a campfire night — strengthening bonds among members and their families.",
+    status: "past",
+    icon: "🏞️",
+  },
+  {
+    title: "New Year Celebration — UDAYAM 2026",
+    date: "January 2, 2026",
+    venue: "Perinthalmanna",
+    category: "Fellowship",
+    description: "A festive new-year evening of stage shows, live music, and fireworks. Convener: Rtn. Suresh Kollathodi.",
+    status: "past",
+    icon: "🎆",
+  },
+  {
+    title: "World Diabetes Day Walkathon",
+    date: "November 14, 2025",
+    venue: "Perinthalmanna",
+    category: "Health",
+    description: "Organised jointly with IMA, the walkathon drew 250+ participants from all walks of life to raise awareness on diabetes prevention.",
+    status: "past",
+    icon: "🚶",
+  },
+  {
+    title: "Jubilee Round Beautification",
+    date: "Inaugurated October 31, 2025",
+    venue: "Jubilee Junction, Perinthalmanna",
+    category: "Public Image",
+    description: "A landmark ₹5 Lakh+ civic project — a granite-paved platform and a steel-cast Rotary wheel forming a symbolic gateway to the municipality.",
+    status: "past",
+    icon: "🛣️",
+  },
+  {
+    title: "Resource Talk on Hormone Imbalances",
+    date: "September 23, 2025",
+    venue: "ISS College of Teacher Education",
+    category: "Health",
+    description: "Endocrinologist Rtn. Dr. Vishnu Vasudevan equipped future teachers to identify and respond to hormonal issues in students.",
+    status: "past",
+    icon: "🩺",
+  },
+  {
+    title: "Onam Celebration — Onanilav",
+    date: "August 31, 2025",
+    venue: "Perinthalmanna",
+    category: "Fellowship",
+    description: "100+ Rotarians and families came together for outdoor games, a traditional Kerala Sadya, and award trophies for the winning teams.",
+    status: "past",
+    icon: "🌺",
+  },
+  {
+    title: "Say No to Drugs — Youth Awareness",
+    date: "August 20, 2025",
+    venue: "PTM Government College, Perinthalmanna",
+    category: "Youth Service",
+    description: "A campaign reaching ~50 students on the harmful effects of substance abuse, led with the Excise Department's Vimukthi Mission.",
+    status: "past",
+    icon: "🚫",
+  },
+  {
+    title: "Ammyum Kunjum — Maternal & Child Health",
+    date: "July 27, 2025",
+    venue: "Surabhi Nagar, Perinthalmanna",
+    category: "Health",
+    description: "A district-priority workshop on nutrition and child health led by gynaecologists and a neonatologist, reaching ~70 mothers and children.",
+    status: "past",
+    icon: "🤱",
+  },
+  {
+    title: "Charity — A Home for a Family in Need",
+    date: "Rotary Year 2025–26",
+    venue: "Vettathoor Panchayath",
+    category: "Service Project",
+    description: "₹86,000 in financial aid provided to Hamza and family toward completing their home — humanitarian service, one family at a time.",
+    status: "past",
+    icon: "🤲",
   },
 ];
 
@@ -96,12 +179,25 @@ const categoryColors: Record<string, string> = {
   "Club Event": "badge-neutral",
   "Awards": "badge-warning",
   "Youth Service": "badge-success",
+  "Health": "badge-info",
+  "Fellowship": "badge-secondary",
+  "Public Image": "badge-accent",
+  "District": "badge-primary",
 };
 
 function UpcomingCard({ event }: { event: Event }) {
   const isFeatured = event.featured ?? event.status === "tbd";
+  const cardClass = `card shadow-md border ${
+    isFeatured
+      ? "border-secondary/40 bg-gradient-to-br from-secondary/5 to-base-100"
+      : "border-base-200 bg-base-100"
+  } card-hover ${event.link ? "cursor-pointer" : ""}`;
+  const Wrapper = event.link ? "a" : "div";
   return (
-    <div class={`card shadow-md border ${isFeatured ? "border-secondary/40 bg-gradient-to-br from-secondary/5 to-base-100" : "border-base-200 bg-base-100"} card-hover`}>
+    <Wrapper
+      href={event.link}
+      class={event.link ? `block ${cardClass}` : cardClass}
+    >
       <div class="card-body p-7">
         <div class="flex items-start gap-4">
           <div class={`text-4xl w-14 h-14 flex items-center justify-center rounded-2xl flex-shrink-0 ${isFeatured ? "bg-secondary/20" : "bg-primary/10"}`}>
@@ -144,10 +240,15 @@ function UpcomingCard({ event }: { event: Event }) {
                   : "🎖️ You and your family are warmly invited. — Rtn Kuriakose KK, President"}
               </span>
             </div>
+            {event.link && (
+              <p class="mt-3 text-right text-sm font-bold text-secondary">
+                View full programme →
+              </p>
+            )}
           </div>
         )}
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

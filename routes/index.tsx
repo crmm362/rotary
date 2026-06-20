@@ -111,7 +111,10 @@ export default function Home(_props: PageProps) {
         <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-28 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
           {/* Text */}
           <div class="flex-1 text-center md:text-left">
-            <div class="anim-fade-up inline-flex items-center gap-2 glass text-white rounded-full pl-3 pr-4 py-2 mb-5 text-xs sm:text-sm font-semibold tracking-wide">
+            <a
+              href="/event-flow"
+              class="anim-fade-up group inline-flex items-center gap-2 glass text-white rounded-full pl-3 pr-4 py-2 mb-5 text-xs sm:text-sm font-semibold tracking-wide hover:bg-white/20 transition-colors"
+            >
               <span class="relative flex h-2.5 w-2.5">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75">
                 </span>
@@ -119,7 +122,10 @@ export default function Home(_props: PageProps) {
                 </span>
               </span>
               🎉 Website Launch &amp; Installation Ceremony — 20 June 2026
-            </div>
+              <span class="opacity-80 group-hover:translate-x-0.5 transition-transform">
+                →
+              </span>
+            </a>
             <div class="anim-fade-up anim-d1 badge badge-secondary badge-lg font-semibold text-xs tracking-widest uppercase mb-5 px-4 py-3 block sm:inline-flex w-fit mx-auto md:mx-0">
               Est. 1988 · District 3204 · Club ID 25399
             </div>
@@ -426,8 +432,11 @@ export default function Home(_props: PageProps) {
             </a>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {/* Featured: Installation Ceremony */}
-            <div class="card bg-gradient-to-br from-secondary/10 to-base-100 border border-secondary/30 shadow-md card-hover md:col-span-2">
+            {/* Featured: Installation Ceremony — links to full programme */}
+            <a
+              href="/event-flow"
+              class="block card bg-gradient-to-br from-secondary/10 to-base-100 border border-secondary/30 shadow-md card-hover md:col-span-2 cursor-pointer"
+            >
               <div class="card-body p-7">
                 <div class="flex items-center gap-3 mb-3">
                   <div class="text-3xl w-12 h-12 flex items-center justify-center rounded-xl bg-secondary/20">
@@ -451,13 +460,16 @@ export default function Home(_props: PageProps) {
                   his team of Office Bearers for the Rotary year 2026–27. You and
                   your family are warmly invited to join the celebration.
                 </p>
-                <div class="mt-4">
+                <div class="mt-4 flex flex-wrap items-center justify-between gap-2">
                   <span class="badge badge-secondary badge-outline text-xs">
                     Personal invitation from the President
                   </span>
+                  <span class="text-sm font-bold text-secondary">
+                    View full programme →
+                  </span>
                 </div>
               </div>
-            </div>
+            </a>
             {/* Club Assembly */}
             <div class="card bg-base-100 border border-base-200 shadow-sm card-hover">
               <div class="card-body p-7">

@@ -159,7 +159,7 @@ export default function GalleryPage() {
           </p>
           <div class="flex flex-wrap justify-center gap-3">
             <a
-              href="https://www.facebook.com/rotary.perinthalmanna"
+              href="https://www.facebook.com/rotaryclub.perintalmanna/"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-primary btn-lg rounded-full px-8 font-bold"

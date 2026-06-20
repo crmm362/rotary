@@ -1,5 +1,5 @@
 // Official club social profiles. Update the handles here if they ever change.
-const FACEBOOK_URL = "https://www.facebook.com/rotary.perinthalmanna";
+const FACEBOOK_URL = "https://www.facebook.com/rotaryclub.perintalmanna/";
 const INSTAGRAM_URL = "https://www.instagram.com/rotary.perinthalmanna";
 
 function FacebookIcon({ class: c = "w-5 h-5" }: { class?: string }) {

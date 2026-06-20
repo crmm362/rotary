@@ -43,14 +43,6 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              href="/event-flow"
-              class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
-            >
-              Programme
-            </a>
-          </li>
-          <li>
-            <a
               href="/gallery"
               class="font-medium text-gray-700 hover:text-rotary-blue hover:bg-base-200 rounded-lg transition-colors"
             >
