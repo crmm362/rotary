@@ -57,6 +57,45 @@ const focusAreas = [
   "Supporting local initiatives",
 ];
 
+const megaProjects = [
+  {
+    icon: "🏥",
+    year: "1988",
+    tag: "Our First Project",
+    title: "Mortuary Building — Taluk Government Hospital",
+    desc:
+      "The club's very first initiative, undertaken in our charter year. We constructed a dedicated mortuary facility at the Perinthalmanna Taluk Government Hospital, filling a long-standing gap in public health infrastructure that continues to serve the entire taluk today.",
+    stat: "Serving the taluk since 1988",
+  },
+  {
+    icon: "💉",
+    year: "Every Year",
+    tag: "End Polio Now",
+    title: "Pulse Polio Immunization",
+    desc:
+      "Year after year, our members mobilise for the national Pulse Polio drive, helping immunise around 100 children under the age of five across Perinthalmanna Taluk — part of Rotary's global commitment to eradicate polio for good.",
+    stat: "~100 children under 5 immunised annually",
+  },
+  {
+    icon: "🎪",
+    year: "1992",
+    tag: "Community Landmark",
+    title: "National-Level Exhibition & Cultural Fest",
+    desc:
+      "A landmark 30-day national exhibition, trade fair and cultural festival — the first and largest event of its kind in the Malappuram district at the time. It united exhibitors, artists and the community on an unprecedented scale and firmly established the club's presence in the region.",
+    stat: "30 days · District's first major trade fair",
+  },
+  {
+    icon: "🏅",
+    year: "1998",
+    tag: "Award-Winning · Matching Grant",
+    title: "Polio Corrective Surgery Programme",
+    desc:
+      "In partnership with a Rotary district in the USA and funded through a Rotary Foundation Matching Grant, the club organised corrective surgeries for polio-affected children — restoring mobility and independence to 145 young lives. The project earned the Rotary International President's Special Recognition Award.",
+    stat: "145 children · RI President's Special Recognition Award",
+  },
+];
+
 export default function Home(_props: PageProps) {
   return (
     <div class="flex flex-col min-h-screen">
@@ -301,8 +340,61 @@ export default function Home(_props: PageProps) {
         </div>
       </section>
 
+      {/* ── MEGA / MILESTONE PROJECTS ── */}
+      <section id="mega-projects" class="py-20 bg-base-200">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <div class="badge badge-secondary badge-outline font-semibold tracking-widest uppercase text-xs px-4 py-3 mb-3">
+              Mega Projects
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-base-content mb-4">
+              Milestone <span class="text-primary">Projects</span>
+            </h2>
+            <p class="text-gray-500 text-lg leading-relaxed">
+              Over three decades of service, a few landmark initiatives stand
+              out — projects that transformed lives and defined who we are.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {megaProjects.map((p) => (
+              <div
+                key={p.title}
+                class="card bg-base-100 border border-base-200 shadow-sm card-hover"
+              >
+                <div class="card-body p-7">
+                  <div class="flex items-center gap-4 mb-3">
+                    <div class="text-3xl w-14 h-14 flex items-center justify-center rounded-2xl bg-secondary/15 flex-shrink-0">
+                      {p.icon}
+                    </div>
+                    <div>
+                      <span class="badge badge-primary text-xs font-bold">
+                        {p.year}
+                      </span>
+                      <p class="text-xs text-gray-400 mt-1 font-medium uppercase tracking-wide">
+                        {p.tag}
+                      </p>
+                    </div>
+                  </div>
+                  <h3 class="text-lg font-extrabold text-base-content mb-2">
+                    {p.title}
+                  </h3>
+                  <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                    {p.desc}
+                  </p>
+                  <div class="mt-auto pt-3 border-t border-base-200">
+                    <span class="flex items-center gap-2 text-sm font-semibold text-secondary">
+                      <span class="text-base">⭐</span> {p.stat}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── UPCOMING EVENTS PREVIEW ── */}
-      <section class="py-20 bg-base-200">
+      <section class="py-20 bg-base-100">
         <div class="max-w-6xl mx-auto px-6">
           <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
@@ -375,7 +467,7 @@ export default function Home(_props: PageProps) {
       </section>
 
       {/* ── LATEST BULLETIN ── */}
-      <section class="py-20 bg-base-100">
+      <section class="py-20 bg-base-200">
         <div class="max-w-6xl mx-auto px-6">
           <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
