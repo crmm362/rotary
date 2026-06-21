@@ -16,19 +16,6 @@ type Event = {
 
 const upcomingEvents: Event[] = [
   {
-    title: "Installation Ceremony 2026–27",
-    date: "Saturday, June 20, 2026 · 7:00 PM",
-    venue: "IMA Hall, Perinthalmanna",
-    category: "Club Event",
-    description:
-      "Installation of Rtn PHF Kuriakose KK as President, along with his team of Office Bearers for the Rotary year 2026–27. Members, families, and well-wishers are warmly invited to join the celebration.",
-    status: "upcoming",
-    icon: "🎖️",
-    featured: true,
-    link: "/event-flow",
-    highlights: ["President: Rtn PHF Kuriakose KK", "Office Bearers 2026–27", "Families welcome"],
-  },
-  {
     title: "Weekly Club Meeting",
     date: "Every Friday · 7:00 PM",
     venue: "Rotary Hall, Pathaikara, Perinthalmanna",
@@ -53,6 +40,16 @@ const upcomingEvents: Event[] = [
 ];
 
 const pastEvents: Event[] = [
+  {
+    title: "Installation Ceremony 2026–27",
+    date: "Saturday, June 20, 2026 · 7:00 PM",
+    venue: "IMA Hall, Perinthalmanna",
+    category: "Club Event",
+    description:
+      "Installation of Rtn PHF Kuriakose KK as President, along with his team of Office Bearers for the Rotary year 2026–27.",
+    status: "past",
+    icon: "🎖️",
+  },
   {
     title: "District Governor's Official Visit",
     date: "May 8, 2026",
